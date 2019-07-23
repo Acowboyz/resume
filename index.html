@@ -18,14 +18,15 @@
   
   /* Whole document */
   body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      width: 800px;
+      /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+      width: 850px;
       margin: auto;
       background: #FFFFFF;
 /*      padding: 10px 10px 10px 10px;*/
-      font-size:16px;
+      font-size:15px;
+      /*font-weight: 300;*/
       text-align: justify;
-      line-height: 25px;
+      line-height: 20px;
   }
   
   #info {
@@ -35,7 +36,7 @@
   
   /* Title of the resume */
   h1 {
-      font-size: 40px;
+      font-size: 30px;
       color: #757575;
       text-align:center;
       margin-bottom:15px;
@@ -47,7 +48,8 @@
       color: #05265b;
       padding-bottom: 5px;
       border-bottom: solid #5674a5;
-      font-size:25px;
+      font-size: 22px;
+      text-align:center;
   }
   /* There is a bar just before each category */
   
@@ -83,6 +85,11 @@
       padding-left:30px;
       margin:5px;
   }
+
+  .highlight-list {
+      /*font-size: 16px;*/
+      line-height: 25px;
+  }
   
   /* Blockquotes */
   blockquote {
@@ -105,6 +112,12 @@
   hr {
       color: #A6A6A6;
   }
+
+  .tech_stack_hr {
+      max-width: 70px;
+      margin: 0px;
+      margin-bottom: 5px;
+  }
   
   table {
       width: 100%;
@@ -118,83 +131,127 @@
 <body>
 <h1 id="yu-chieh-lin-felix">Yu-Chieh Lin ( Felix )</h1>
 <p id="info"> its.acowboyz@gmail.com   |   +886 930 727 880   |   Taoyuan, Taiwan   |   <a href="https://github.com/Acowboyz"> Acowboyz@github</a></p>
-<h2 id="summary">Summary</h2>
-<p>A performance-driven, customer-focused and self-learning software engineer who is enthusiastic about new technologies. Have hands-on experience with python, django, sql and shell scripting. Familiar with c programming and embedded Linux developing. I am looking for a junior backend developer position where my knowledge and skills will be an advantage and can be fully utilized.</p>
+<!--<h2 id="summary">Summary</h2>-->
+<!--<p>A performance-driven, customer-focused and self-learning software engineer who is enthusiastic about new technologies. Have hands-on experience with python, django, sql and shell scripting. Familiar with c programming and embedded Linux developing. I am looking for a junior backend developer position where my knowledge and skills will be an advantage and can be fully utilized.</p>-->
 
-<h2 id="work-experience">Work Experience</h2>
+<h2 id="highlight">Highlights</h2>
+<ul class="highlight-list">
+    <li>Master degree plus 5 years software development experience and 1.5 years experience in Python fields.</li>
+    <li>Strong working experience of embedded Linux developing and Web scraping on Unix-like system.</li>
+    <li>Proficient in C, Python, Shell Scripting.</li>
+    <li>Hands-on experience of OO design.</li>
+    <li>Experience with various frontend technologies, such as jQuery, JavaScript, AJAX, HTML, CSS and Bootstrap.</li>
+    <li>Basic Knowledge of restful API, design pattern, git flow, github flow, test-driven development and docker.</li>
+    <li>Passionate about learning new technologies from MOOCs and technical meetups.</li>
+    <li>Able to work independently, and also enjoy brainstorming and collaborating with colleagues.</li>
+</ul>
+<!--<table>-->
+<!--<tbody>-->
+<!--<tr><td>Master degree plus 5 years software development experience and 1.5 years experience in Python fields.</td></tr>-->
+<!--<tr><td>Strong working experience of embedded Linux developing and Web scraping on Unix-like system.</td></tr>-->
+<!--<tr><td>Strong background in probability, linear algebra and calculus.</td></tr>-->
+<!--<tr><td>Passionate about learning new techniques, </td></tr>-->
+<!--<tr><td>Proficient in C, Python, Shell Scripting.</td></tr>-->
+<!--<tr><td>Familiar with jQuery, JavaScript, AJAX, HTML, CSS and Bootstrap.</td></tr>-->
+<!--<tr><td>Hands-on experience with MVC and OO design.</td></tr>-->
+<!--<tr><td>Basic Knowledge of Restful API, Design Pattern, Git Flow, GitHub Flow, Test-Driven Development and Docker.</td></tr>-->
+<!--<tr></tr>-->
+
+<!--</tbody>-->
+<!--</table>-->
+
+<h2 id="work-experience">Experience</h2>
+<dl>
+    <dt>Sep. 2018 -<br> Current</dt>
+    <dd><strong>TFA Technologies</strong></dd>
+    <dd><p><strong>Python Developer</strong></p></dd>
+    <dd><p>Web Scraping and Automation API</p></dd>
+    <dd><ul><li>Extract, clean and transform from structured and unstructured data.</li>
+            <li>Designed scraping strategies and bypassed anti-scraping techniques.</li>
+            <li>Built the automated deployment.</li>
+            <li>Integrated the API of third-party log management service into systems.</li>
+            <li>Saved 90 percent costs and made the systems more stable and faster by redesigning the system architecture.</li></ul></dd>
+    <dd><strong>Tech Stacks</strong></dd>
+    <dd><hr class="tech_stack_hr"></dd>
+    <dd>AWS EC2, Ubuntu, Web Scraping, Requests, Pyppeteer, Xpath, Pandas, Regular Expression, Flask, Swagger, Loggly, Fabric, SQLite, Python, Shell Scripting, Git</dd>
+</dl>
 <dl>
     <dt>Nov. 2017 -<br> Feb. 2018</dt>
-    <dd><strong>Firmware Engineer</strong></dd>
-    <dd><p>Stealth Startup</p></dd>
-    <dd>
-        <ul>
-            <li>Verified the functionality of ARM-based MCU periperials. ( SPI, I2S, DMA )</li>
-        </ul>
-    </dd>
-    <dd>
-        <ul>
-            <li>Ensured the communication quality between I2S interface and stereo audio codec.</li>
-        </ul>
-    </dd>
+    <dd><strong>Eastsoft Communication (HK) System Co., Ltd.</strong></dd>
+    <dd><p><strong>Firmware Engineer</strong></p></dd>
+    <dd><p>IC Verification</p></dd>
+    <dd><ul><li>Verified the functionality of ARM MCU peripherals. (SPI, I2S, DMA)</li>
+            <li>Ensured the communication quality between I2S interface and stereo audio codec.</li></ul></dd>
+    <dd><strong>Tech Stacks</strong></dd>
+    <dd><hr class="tech_stack_hr"></dd>
+    <dd>ARM MCU Architecture, Oscilloscope and FPGA Debugging, C</dd>
 </dl>
-
 <dl>
     <dt>Nov. 2014 -<br> Sep. 2017</dt>
-    <dd><strong>Software Engineer</strong></dd>
-    <dd><p>EDIMAX Technology Co., Ltd.</p></dd>
-    <dd><p>Front-end</p></dd>
+    <dd><strong>EDIMAX Technology Co., Ltd.</strong></dd>
+    <dd><p><strong>Software Engineer</strong></p></dd>
+
+    <dd><p>Web</p></dd>
     
-    <dd><ul><li>Built and maintained Web projects of network devices for customers' needs.</li></ul>
-    </dd><dd><ul><li>Integrated JSON data through the CGI from the server to the browser.</li></ul>
-    </dd><dd><ul><li>Dealt with the cross-browser compatibility.</li></ul></dd>
+    <dd><ul><li>Developed and maintained Web projects of network devices.</li>
+            <li>Developed and integrated the API services through the CGI of network devices.</li>
+            <li>Dealt with the cross-browser compatibility.</li></ul></dd>
     
     <dd><p>System</p></dd>
-    <dd><ul><li>Replicated and analyzed the network issues reported from PAs and customers.</li></ul></dd>
-    <dd><ul><li>Tested the performance of network devices under various cases. ( Ethernet, Wireless, WDS, Mesh Network, etc. )</li></ul></dd>
-    <dd><ul><li>Built programs and scripts for the automated test. </li></ul></dd>
-    <dd><ul><li>Implemented and maintained the system functions from opensource projects. ( CLI, Auto Firmware Upgrade, SNMP, Log Recording, Guest Network, etc. )</li></ul></dd>
-    <dd><ul><li>Maintained the wireless drivers. ( Ralink, Atheros )</li></ul></dd>
+    <dd><ul><li>Replicated and analyzed the network issues reported from PAs and customers.</li>
+            <li>Tested the performance of network devices under various cases. (Ethernet, Wireless, WDS, Mesh Network, etc.)</li>
+            <li>Built programs and scripts for the automated testing. </li>
+            <li>Implemented and maintained the system functions from opensource projects. (CLI, Auto Firmware Upgrade, SNMP, Log Recording, Guest Network, etc.)</li>
+            <li>Maintained the wireless drivers. (Ralink, Atheros)</li></ul></dd>
     
     <dd><p>Others</p></dd>
-    <dd><ul><li>Wrote documents and reports for explanation, requirement, specification, guideline, performance, test procedures, etc.</li></ul></dd>
-    <dd><ul><li>Made new firmware binary files of various projects for the factory production.</li></ul></dd>
-    <dd><ul><li>Supported LABs to pass the verification of new products. ( DFS, CE adativity, etc. )</li></ul></dd>
+    <dd><ul><li>Wrote documents and reports for explanation, requirement, specification, guideline, performance, testing procedures, etc.</li>
+            <li>Made new firmware binary files of various projects for the factory production.</li>
+            <li>Supported LABs to pass the verification of new products. (DFS, CE adativity, etc.)</li></ul></dd>
+    <dd><strong>Tech Stacks</strong></dd>
+    <dd><hr class="tech_stack_hr"></dd>
+    <dd>Embedded Linux, Ubuntu, Networking, Packet Analysis, C, HTML, JavaScript, jQuery, CSS, Shell Scripting, Git</dd>
 </dl>
 <!-- end work experience-->
     
 <h2 id="education">Education</h2>
 <dl>
     <dt>Sep. 2012 -<br> June 2014</dt>
-    <dd><strong>Master of Engineering, Communications Engineering</strong></dd>
-    <dd>National Sun Yat-sen University</dd>
+    <dd><strong>National Sun Yat-sen University</strong></dd>
+    <dd><strong>Master of Engineering, Communications Engineering, GPA 4.16</strong></dd>
     <dd>Thesis : Physical Layer Secret Key Generation Based On Trellis Coded Modulation and Virtual Channel Approach</dd>
-    
+</dl>
+<dl>
     <dt>Sep. 2008 -<br> June 2012</dt>
+    <dd><strong>National Sun Yat-sen University</strong></dd>
     <dd><strong>Bachelor of Engineering, Electrical Engineering</strong></dd>
-    <dd>National Sun Yat-sen University</dd>
+    <dd>Activities and Societies: Table Tennis Varsity Team Member</dd>
 </dl>
 <!-- end education -->
 
-<h2 id="courses">Courses</h2>
+<h2 id="courses">Activities</h2>
 <dl>
-    <dt>Mar. 2018 -<br> Present</dt>
-    <dd><strong>Python Course</strong></dd>
-    <dd><p>Online Material</p></dd>
-    <dd><ul><li><a href="https://github.com/Acowboyz/road_to_python/tree/master/01-python_basic/notes">Python Basic</a></li></ul></dd>
-    <dd><ul><li><a href="https://github.com/Acowboyz/road_to_python/tree/master/02-python_advance/notes">Python Advance</a></li></ul></dd>
-    <dd><ul><li><a href="https://github.com/Acowboyz/road_to_python/tree/master/03-python_ds_al/notes">Python Data Structure and Algorithm</a></li></ul></dd>
-    <dd><ul><li><a href="https://github.com/Acowboyz/road_to_python/tree/master/04-python_sql/notes">Structure Query Language and Database</a></li></ul></dd>
-    <dd><ul><li><a href="https://github.com/Acowboyz/road_to_python/">Front-end Web Development</a></li></ul></dd>
-    <dd><ul><li><a href="https://github.com/Acowboyz/road_to_python/">Django Web Framework</a></li></ul></dd>
-    <dd><ul><li><a href="https://github.com/Acowboyz/road_to_python/">Web Crawler</a></li></ul></dd>
+    <dt>May. 2019 -<br> Current</dt>
+    <dd><strong>DataCamp</strong></dd>
+    <dd><strong>Data Scientist with Python Track</strong></dd>
+    <dd><a href="https://www.datacamp.com/profile/Acowboyz">Profile of Learning Progress</a></dd>
 </dl>
- 
 <dl>
-<dt>July 2016</dt>
-<dd><strong>嵌入式 Linux 物聯網系統實作</strong>
-</dd>
-<dd>台大嚴慶齡工業研究中心
-</dd>
+    <dt>June. 2019</dt>
+    <dd><strong>Women Who Code Taipei</strong></dd>
+    <dd><strong>Flutter Study Group</strong></dd>
+</dl>
+<dl>
+    <dt>Mar. 2018 -<br> Sep. 2018</dt>
+    <dd><strong>Self-Taught Python Programmer</strong></dd>
+    <dd><strong>Self-Learning Python Materials</strong></dd>
+    <dd><a href="https://github.com/Acowboyz/road_to_python/tree/master/">Notes of Python Material</a></dd>
+</dl>
+
+<dl>
+    <dt>July 2016</dt>
+    <dd><strong>台大嚴慶齡工業研究中心</strong></dd>
+    <dd><strong>嵌入式 Linux 物聯網系統實作</strong></dd>
 </dl>
 <!-- end Courses -->
     
@@ -202,23 +259,23 @@
 <table>
 <tbody>
 <tr class="odd">
-<td align="left">Programming Languages</td>
-<td align="left">C, HTML, Javascript, jQuery, CSS, Bootstrap, Shell Scripting, Python, SQL, Matlab</td>
+<td align="left">Programming Languages and Tools</td>
+<td align="left">C, HTML, JavaScript, jQuery, CSS, Bootstrap, Shell Scripting, Python, SQL, MATLAB, Dart, Flutter</td>
 </tr>
 <tr class="even">
 <td align="left">Databases</td>
-<td align="left">MySQL, MongoDB, Redis, PostgreSQL</td>
+<td align="left">MySQL, SQlite, MongoDB</td>
 </tr>
 <tr class="odd">
 <td align="left">Web Frameworks</td>
-<td align="left">Django</td>
+<td align="left">Django, Flask</td>
 </tr>
 <tr class="even">
 <td align="left">Operating Systems</td>
-<td align="left">Linux, Windows, MacOS</td>
+<td align="left">Ubuntu, Windows, MacOS</td>
 </tr>
 <tr class="odd">
-<td align="left">Configuration Management tool</td>
+<td align="left">Version Control System</td>
 <td align="left">Git</td>
 </tr>
 <tr class="even">
@@ -231,7 +288,7 @@
 </tr>
 <tr class="even">
 <td align="left">Issue Tracking Systems</td>
-<td align="left">JIRA, BTS, Redmine</td>
+<td align="left">JIRA, BTS, Redmine, Trello</td>
 </tr>
 <tr class="odd">
 <td align="left">Additional Software</td>
